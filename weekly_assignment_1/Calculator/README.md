@@ -71,7 +71,7 @@ To get started with the Basic Calculator project:
 - **7. Modulus**: Returns the remainder when dividing the first number by the second.
 - **8. Exit**: Exits the program.
 ##### Example 1: Addition 
-    ```bash
+  ```bash
     Welcome to the Basic Calculator!
 
     Select an operation:
