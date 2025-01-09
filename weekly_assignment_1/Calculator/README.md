@@ -50,6 +50,13 @@ To get started with the Basic Calculator project:
    ```bash
    ./calculator
 
+## Usage 
+
+1. Once you run the program, you will be prompted with a menu to select an operation.
+2. Enter the corresponding number for the desired operation.
+3. The program will then ask you to input the required numbers for the operation.
+4. The result of the operation will be displayed, and you can continue performing more calculations or exit the program.
+
      
    
      
