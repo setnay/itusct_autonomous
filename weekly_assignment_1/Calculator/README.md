@@ -43,10 +43,10 @@ To get started with the Basic Calculator project:
    ```bash
    git clone https://github.com/yourusername/basic-calculator.git
    cd basic-calculator
-2. Compile the code:
+3. Compile the code:
    ```bash
    g++ main.cpp Calculator.cpp -o calculator
-3. Run the program:
+4. Run the program:
    ```bash
    ./calculator
 
@@ -70,25 +70,30 @@ To get started with the Basic Calculator project:
 - **6. Exponentiation**: Raises a number (base) to the power of another number (exponent).
 - **7. Modulus**: Returns the remainder when dividing the first number by the second.
 - **8. Exit**: Exits the program.
-##### Example 1: Addition
+##### Example 1: Addition 
 
-```bash
-Welcome to the Basic Calculator!
+    ```bash
+   Welcome to the Basic Calculator!
 
-Select an operation:
-1. Addition
-2. Subtraction
-3. Multiplication
-4. Division
-5. Square
-6. Exponentiation
-7. Modulus
-8. Exit
+   Select an operation:
+   1. Addition
+   2. Subtraction
+   3. Multiplication
+   4. Division
+   5. Square
+   6. Exponentiation
+   7. Modulus
+   8. Exit
 
-Enter your choice (1-8): 1
-Enter first number: 5
-Enter second number: 3
-Result: 8
+   Enter your choice (1-8): 4
+   Enter first number: 10
+   Enter second number: 0
+   Error! Denominator cannot be zero.
+
+##### Example 2: Division (with error handling)
+ 
+
+
 
 
 
