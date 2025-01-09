@@ -43,3 +43,4 @@ To get started with the Basic Calculator project:
    ```bash
    git clone https://github.com/yourusername/basic-calculator.git
    cd basic-calculator
+2. Compile the code:   
