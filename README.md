@@ -46,3 +46,21 @@ To use the calculator, simply run the program, and you will be presented with a 
 ```bash
 g++ main.cpp Calculator.cpp -o calculator
 ./calculator
+#### Example Run:
+Welcome to the Basic Calculator!
+
+Select an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Square
+6. Exponentiation
+7. Modulus
+8. Exit
+
+Enter your choice (1-8): 1
+Enter first number: 5
+Enter second number: 3
+Result: 8
+
