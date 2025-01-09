@@ -74,21 +74,17 @@ To get started with the Basic Calculator project:
     ```bash
     Welcome to the Basic Calculator!
 
-Select an operation:
-1. Addition
-2. Subtraction
-3. Multiplication
-4. Division
-5. Square
-6. Exponentiation
-7. Modulus
-8. Exit
+    Select an operation:
+    1. Addition
+    2. Subtraction
+    3. Multiplication
+    4. Division
+    5. Square
+    6. Exponentiation
+    7. Modulus
+    8. Exit
 
-Enter your choice (1-8): 4
-Enter first number: 10
-Enter second number: 0
-Error! Denominator cannot be zero.
-
+ 
 
     
 
