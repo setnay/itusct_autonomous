@@ -43,4 +43,13 @@ To get started with the Basic Calculator project:
    ```bash
    git clone https://github.com/yourusername/basic-calculator.git
    cd basic-calculator
-2. Compile the code:   
+2. Compile the code:
+   ```bash
+   g++ main.cpp Calculator.cpp -o calculator
+3. Run the program:
+   ```bash
+   ./calculator
+
+     
+   
+     
