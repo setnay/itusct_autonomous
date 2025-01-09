@@ -57,7 +57,10 @@ To get started with the Basic Calculator project:
 3. The program will then ask you to input the required numbers for the operation.
 4. The result of the operation will be displayed, and you can continue performing more calculations or exit the program.
 
-## Operations Menu
+---
+
+### Example Run:
+#### Operations Menu
 
 - **1. Addition**: Adds two numbers.
 - **2. Subtraction**: Subtracts the second number from the first.
@@ -67,6 +70,9 @@ To get started with the Basic Calculator project:
 - **6. Exponentiation**: Raises a number (base) to the power of another number (exponent).
 - **7. Modulus**: Returns the remainder when dividing the first number by the second.
 - **8. Exit**: Exits the program.
+
+
+
 
      
    
