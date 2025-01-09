@@ -1,48 +1,45 @@
-# Calculator Project
+# Basic Calculator (C++)
 
-## Description
+This is a basic calculator program built using C++. The calculator can perform several arithmetic operations including addition, subtraction, multiplication, division, square, exponentiation, and modulus. The program also handles input errors gracefully.
 
-This is a basic calculator implemented in C++ that provides basic mathematical operations such as addition, subtraction, multiplication, division, square, exponentiation, and modulus. It is designed to handle errors like division by zero and invalid input through proper exception handling.
+## Table of Contents
 
-The project is composed of three files:
-- **Calculator.hpp**: Header file containing the declaration of the Calculator class and its member functions.
-- **Calculator.cpp**: Implementation file for the functions declared in `Calculator.hpp`.
-- **main.cpp**: The entry point for the program, where the user interacts with the calculator via a text-based interface.
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Example Run](#example-run)
+- [How it Works](#how-it-works)
+- [Functions Overview](#functions-overview)
+- [Error Handling](#error-handling)
+- [License](#license)
+
+## Project Overview
+
+This C++ project implements a basic calculator with support for multiple operations such as addition, subtraction, multiplication, division, square, exponentiation, and modulus. It is designed to be simple, easy to use, and able to handle various error cases like division by zero and invalid inputs.
 
 ## Features
 
-- **Addition**: Adds two numbers.
-- **Subtraction**: Subtracts the second number from the first.
-- **Multiplication**: Multiplies two numbers.
-- **Division**: Divides the first number by the second (with error handling for division by zero).
-- **Square**: Calculates the square of a number.
-- **Exponentiation**: Raises a base number to the power of an exponent.
-- **Modulus**: Computes the remainder when the first number is divided by the second (with error handling for division by zero).
-  
-The program includes robust error handling for invalid inputs and divides the operations into separate functions within the Calculator class. It supports floating-point calculations and ensures a clean user interface by allowing users to input values directly.
+- Addition, subtraction, multiplication, and division.
+- Square and exponentiation operations.
+- Modulus operation to find the remainder.
+- Input error handling for invalid inputs (e.g., text input when a number is expected).
+- Reusable `Calculator` class with a templated interface (supports different numeric types like `float` and `double`).
+- Simple interactive text-based menu.
 
-## Files
+## Requirements
 
-- **Calculator.hpp**: Header file containing the class definition and function prototypes.
-- **Calculator.cpp**: Source file implementing the Calculator class methods.
-- **main.cpp**: Main program file that drives user interaction with the calculator.
+Before using this project, ensure that you have the following:
 
-### Example:
+- A C++ compiler that supports C++11 or later (e.g., GCC, Clang, Visual Studio).
+- Standard C++ library support.
 
-The following operations are supported:
+## Installation
 
-1. Addition (e.g., 5 + 3)
-2. Subtraction (e.g., 5 - 3)
-3. Multiplication (e.g., 5 * 3)
-4. Division (e.g., 5 / 3)
-5. Square of a number (e.g., square(5))
-6. Exponentiation (e.g., 2 ^ 3)
-7. Modulus (e.g., 5 % 3)
+To get started with the Basic Calculator project:
 
-## Usage
-
-To use the calculator, simply run the program, and you will be presented with a menu of operations. You can choose an operation by entering the corresponding number.
-
-```bash
-g++ main.cpp Calculator.cpp -o calculator
-./calculator
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/basic-calculator.git
+   cd basic-calculator
