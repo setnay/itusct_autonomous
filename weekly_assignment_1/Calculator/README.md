@@ -70,6 +70,7 @@ To get started with the Basic Calculator project:
 - **6. Exponentiation**: Raises a number (base) to the power of another number (exponent).
 - **7. Modulus**: Returns the remainder when dividing the first number by the second.
 - **8. Exit**: Exits the program.
+##### Example 1: Addition
 
 
 
