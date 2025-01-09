@@ -84,6 +84,12 @@ To get started with the Basic Calculator project:
     7. Modulus
     8. Exit
 
+    Enter your choice (1-8): 4
+    Enter first number: 10
+    Enter second number: 0
+    Error! Denominator cannot be zero.
+
+
  
 
     
