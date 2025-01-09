@@ -1,4 +1,3 @@
-# autonomous-assignments
 # Calculator Project
 
 ## Description
