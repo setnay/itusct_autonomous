@@ -6,27 +6,42 @@ This is a basic calculator program built using C++. The calculator can perform s
 
 - [Project Overview](#project-overview)
 - [Features](#features)
+- [File Structure](#file-structure)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Example Run](#example-run)
+- [Example: Handling Division by Zero](example-handling-division-by-zero)
 - [How it Works](#how-it-works)
 - [Functions Overview](#functions-overview)
-- [Error Handling](#error-handling)
-- [License](#license)
+- [Contact](#contact)
 
 ## Project Overview
 
-This C++ project implements a basic calculator with support for multiple operations such as addition, subtraction, multiplication, division, square, exponentiation, and modulus. It is designed to be simple, easy to use, and able to handle various error cases like division by zero and invalid inputs.
+The Basic C++ Calculator is a console-based program developed in C++ that provides a variety of fundamental mathematical operations. These operations include addition, subtraction, multiplication, division, modulus, exponentiation, and squaring. The project demonstrates the use of C++ templates, exception handling, and input validation. The goal of the project is to provide a simple yet robust calculator capable of performing real-time mathematical computations with efficient error handling.
 
 ## Features
 
-- Addition, subtraction, multiplication, and division.
-- Square and exponentiation operations.
-- Modulus operation to find the remainder.
-- Input error handling for invalid inputs (e.g., text input when a number is expected).
-- Reusable `Calculator` class with a templated interface (supports different numeric types like `float` and `double`).
-- Simple interactive text-based menu.
+- **Addition**: Performs the sum of two input numbers.
+- **Subtraction**: Computes the difference between two input numbers.
+- **Multiplication**: Computes the product of two input numbers.
+- **Division**: Divides the first number by the second, with built-in error handling to prevent division by zero.
+- **Modulus**: Calculates the remainder when the first number is divided by the second, also with checks to prevent division by zero.
+- **Square**: Returns the square of the input number.
+- **Exponentiation**: Raises a given base to a specified exponent using the power function.
+- **Error Handling**: Includes extensive error handling mechanisms for invalid input and mathematical errors (e.g., division by zero, invalid choices).
+
+The program is designed using **templates**, allowing flexibility to work with different numeric data types such as float and double.
+
+## File Structure
+
+The project consists of three main files:
+
+- **Calculator.hpp**: The header file that defines the `Calculator` class template, which includes member function declarations for each operation and a static input validation method.
+  
+- **Calculator.cpp**: The implementation file where the member functions of the `Calculator` class are defined. This file contains the logic for each arithmetic operation and exception handling.
+
+- **main.cpp**: The entry point of the application, which provides the user interface. It displays a menu for the user to select operations and processes the input to call the appropriate methods of the `Calculator` class.
 
 ## Requirements
 
@@ -57,40 +72,72 @@ To get started with the Basic Calculator project:
 3. The program will then ask you to input the required numbers for the operation.
 4. The result of the operation will be displayed, and you can continue performing more calculations or exit the program.
 
----
 
-### Example Run:
-#### Operations Menu
+## Example Run
 
-- **1. Addition**: Adds two numbers.
-- **2. Subtraction**: Subtracts the second number from the first.
-- **3. Multiplication**: Multiplies two numbers.
-- **4. Division**: Divides the first number by the second.
-- **5. Square**: Returns the square of a number.
-- **6. Exponentiation**: Raises a number (base) to the power of another number (exponent).
-- **7. Modulus**: Returns the remainder when dividing the first number by the second.
-- **8. Exit**: Exits the program.
-##### Example 1: Addition 
-    ```bash
-       Welcome to the Basic Calculator!
+Here is an example of how the program works:
 
-       Select an operation:
-       1. Addition
-       2. Subtraction
-       3. Multiplication
-       4. Division
-       5. Square
-       6. Exponentiation
-       7. Modulus
-       8. Exit
+```bash
+Welcome to the Basic Calculator!
+Select an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Square
+6. Exponentiation
+7. Modulus
+8. Exit
+Enter your choice (1-8): 1
+Enter first number: 5
+Enter second number: 3
+Result: 8
+```
+In this example, the user selects the Addition operation, inputs two numbers (5 and 3), and the result (8) is displayed.
 
-       Enter your choice (1-8): 4
-       Enter first number: 10
-       Enter second number: 0
-       Error! Denominator cannot be zero.
+## Example: Handling Division by Zero 
+```bash
+Welcome to the Basic Calculator!
+Select an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Square
+6. Exponentiation
+7. Modulus
+8. Exit
+Enter your choice (1-8): 4
+Enter first number: 10
+Enter second number: 0
+Error! Denominator cannot be zero.
+```
+In this example, when the user attempts to perform a division by zero, the program displays the error message: **Error! Denominator cannot be zero.** and prompts for another input.
 
+## How it Works
+### Templates
+The program uses **C++ templates** to allow the calculator to work with different numeric types like float and double. By defining the Calculator class as a template, the operations are performed on the data type provided during object creation.
+### Exception Handling
+The program handles several types of errors:
+- **Invalid Input**: If the user provides a non-numeric input, an error message is shown.
+- **Division by Zero**: An exception is thrown when attempting to divide by zero, and an appropriate error message is displayed.
+- **Invalid Menu Choice**:  If the user selects an invalid operation (not between 1 and 8), the program will notify the user of the invalid choice.
+### User Interaction
+The program runs in a loop until the user chooses to exit. After each operation, the result is displayed, and the user is asked if they want to perform another calculation or exit. The program gracefully handles errors, ensures valid inputs, and continues operation without crashing.
 
- ##### Example 2: Division (with error handling)
+##  Functions Overview
+The program includes the following functions within the _Calculator class_:
+- **addition()**: Adds two numbers.
+- **subtract()**: Subtracts the second number from the first.
+- **multiplication()**: Multiplies two numbers.
+- **division()**: Divides the first number by the second and handles division by zero.
+- **square()**: Returns the square of a number.
+- **exponentiation()**: Raises the base to the power of the exponent.
+- **modulus()**: Returns the modulus (remainder) of the division of two numbers, with error handling for division by zero.
+- **inputErrorHandler()**: Handles input errors, converts the input to the appropriate numeric type, and throws exceptions in case of invalid inputs.
+
+## Contact
+If you have any questions or suggestions, feel free to reach out at setenay.ttc@gmail.com
  
 
 
