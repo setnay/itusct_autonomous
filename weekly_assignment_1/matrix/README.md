@@ -19,7 +19,7 @@ This project is ideal for mathematical, engineering, and scientific applications
 6. [Advanced Matrix Operations](#advanced-matrix-operations)
 7. [Error Handling](#error-handling)
 8. [Compile and Run Instructions](#compile-and-run-instructions)
-9. [License](#license)
+9. [Contact](#contact)
 
 ---
 
@@ -166,7 +166,50 @@ int main() {
     return 0;
 }
 ```
-### Expected Output: 
+### Expected Output:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0f2d1b42-4283-479c-8351-e4b985cdb2fc" alt="Alt metin" />
+</p>
+
+## Matrix Operations
+### Arithmetic Operations
+
+The library supports basic arithmetic operations on matrices such as addition, subtraction, multiplication, and element-wise multiplication (dot product). Each operation is defined in the Matrix class and follows typical matrix algebra rules:
+ 
+1. **Addition** and **Subtraction** are element-wise and require matrices of the same dimensions.
+2. **Multiplication** follows the row-by-column multiplication rule and requires that the number of columns of the first matrix matches the number of rows of the second matrix.
+3. **Dot Product**: Performs element-wise multiplication and returns a matrix of the same dimensions.
+
+### Matrix Transformations
+- **Transpose**: Swaps rows and columns.
+- **Trace**: The trace is the sum of the diagonal elements (i.e., elements where the row index equals the column index).
+
+## Advanced Matrix Operations
+- **Determinant**: Currently supported for 1x1, 2x2, and 3x3 matrices. For larger matrices, the operation is not supported, and an exception is thrown.
+- **Inverse**: Supports calculating the inverse of 2x2 and 3x3 matrices. The inverse of a matrix exists only if its determinant is non-zero. For other sizes, the function throws an exception.
+- **Magnitude**: Computes the magnitude (Euclidean norm) of 1xN vectors.
+
+## Error Handling
+The library uses `std::invalid_argument` to handle errors like incompatible matrix dimensions during operations. For instance, attempting to add matrices of different dimensions will throw an exception. Similarly, trying to invert a matrix with a determinant of zero will also raise an error.
+
+## Compile and Run Instructions
+### Prerequisites
+Ensure you have a C++ compiler installed, such as g++. The project is designed to work with C++11 or higher.
+### Compilation
+1. Open a terminal (or command prompt) and navigate to the directory containing the project files.
+2. Use the following command to compile the program:
+```bash
+g++ main.cpp matrix.cpp -o matrix_operations -std=c++11
+```
+### Running the Program
+To run the compiled program, use the following command:
+```bash
+./matrix_operations
+```
+## Contact
+
+
 
 
 
