@@ -158,6 +158,7 @@ g++ main.cpp -o point_program -std=c++11
 ```
 
 ## Contact 
+If you have any questions or suggestions, feel free to reach out at setenay.ttc@gmail.com
 
 
 
