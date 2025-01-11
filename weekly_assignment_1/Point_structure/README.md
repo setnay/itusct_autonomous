@@ -140,7 +140,7 @@ int main() {
 }
 ```
 ### Expected Output:
-![](Screenshot from 2025-01-11 11-43-04.png)
+![](weekly_assignment_1/Point_structure/Screenshot from 2025-01-11 11-43-04.png)
 
 
 
