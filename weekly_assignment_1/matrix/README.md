@@ -208,7 +208,7 @@ To run the compiled program, use the following command:
 ./matrix_operations
 ```
 ## Contact
-
+If you have any questions or suggestions, feel free to reach out at setenay.ttc@gmail.com
 
 
 
