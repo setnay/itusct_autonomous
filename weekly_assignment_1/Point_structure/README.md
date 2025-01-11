@@ -94,6 +94,59 @@ Region region() const;
 ```
 #### is_in_same_region Method 
 The **is_in_same_region** method checks if two points are in the same octant (region) of 3D space.
+```cpp
+static bool is_in_same_region(const Point& p1, const Point& p2);
+```
+#### region_to_string Method
+The **region_to_string** method converts a Region enum value to a human-readable string, representing the octant name.
+```cpp
+static std::string region_to_string(Region r);
+```
+
+## Usage Example
+Here’s an example of how to use the **Point class** to create points, compute distances, compare points, and determine their regions.
+
+```cpp
+int main() {
+    // Create two points in 3D space
+    Point p1(3.0, -2.0, 5.0);
+    Point p2(-1.0, 4.0, 3.0);
+
+    // Calculate distance of p1 from the origin
+    std::cout << "Distance of p1 to the origin: " << p1.zero_distance() << std::endl;
+
+    // Calculate distance between p1 and p2
+    std::cout << "Distance between p1 and p2: " << Point::distance(p1, p2) << std::endl;
+
+    // Compare points to find the one farther from the origin
+    Point farther = Point::compare(p1, p2);
+    std::cout << "Point farther from the origin: (" << farther.x << "," << farther.y << ", " << farther.z << ")" << std::endl;
+
+    // Display the region of p1 and p2
+    Region p1_region = p1.region();
+    std::cout << "Region of p1: " << Point::region_to_string(p1_region) << std::endl;
+    
+    Region p2_region = p2.region();
+    std::cout << "Region of p2: " << Point::region_to_string(p2_region) << std::endl;
+
+    // Check if p1 and p2 are in the same region
+    if (Point::is_in_same_region(p1, p2)) {
+        std::cout << "p1 and p2 are in the same region." << std::endl;
+    } else {
+        std::cout << "p1 and p2 are not in the same region." << std::endl;
+    }
+
+    return 0;
+}
+```
+### Expected Output:
+![](Screenshot from 2025-01-11 11-43-04.png)
+
+
+
+
+
+
 
 
 
