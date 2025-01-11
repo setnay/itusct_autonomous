@@ -18,7 +18,7 @@ This project defines a C++ program to represent points in 3-dimensional space, c
    - [region_to_string Method](#region_to_string-method)
 4. [Usage Example](#usage-example)
 5. [Compile and Run Instructions](#compile-and-run-instructions)
-6. [License](#license)
+6. [Contact](#contact)
 
 ---
 
@@ -140,7 +140,25 @@ int main() {
 }
 ```
 ### Expected Output:
-![](weekly_assignment_1/Point_structure/Screenshot from 2025-01-11 11-43-04.png)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ea3c1316-a277-47df-aa13-79d647e6d5ab" alt="Alt metin" />
+</p>
+
+## Compile and Run Instructions
+To compile and run this program, ensure you have a C++ compiler (e.g., g++) installed on your system. Follow these steps:
+1. Open a terminal or command prompt.
+2. Navigate to the directory containing the **main.cpp** file.
+3. Compile the program using the following command:
+```bash
+g++ main.cpp -o point_program -std=c++11
+```
+4. Run the program.
+```bash
+./point_program
+```
+
+## Contact 
+
 
 
 
