@@ -77,7 +77,7 @@ To get started with the Basic Calculator project:
 
 Here is an example of how the program works:
 
-```cpp
+```bash
 Welcome to the Basic Calculator!
 Select an operation:
 1. Addition
@@ -96,7 +96,7 @@ Result: 8
 In this example, the user selects the Addition operation, inputs two numbers (5 and 3), and the result (8) is displayed.
 
 ## Example: Handling Division by Zero 
-```cpp
+```bash
 Welcome to the Basic Calculator!
 Select an operation:
 1. Addition
